@@ -1544,3 +1544,98 @@ body.dark {
   --button-border: #04D9ff;
 }
 /* ===== Courses Page Styles END ===== */
+
+/* ✅ ===================== MOBILE COMPATIBILITY STYLES ===================== */
+
+/* Viewport is already in your HTML <head>:
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+*/
+
+/* General responsive layout */
+@media (max-width: 1024px) {
+  .courses-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .course-card {
+    width: 90%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Font scaling */
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  h1,
+  .courses-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  h3.card-title {
+    font-size: 1.2rem;
+  }
+
+  /* Buttons & Inputs */
+  .register-button,
+  .login-button,
+  .navbar .nav-links a {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+    text-align: center;
+    display: inline-block;
+  }
+
+  /* Course Cards */
+  .course-card {
+    width: 100%;
+    max-width: 500px;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+
+  .course-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Center content */
+  .card-title {
+    text-align: center;
+  }
+
+  .card-subtitle,
+  .card-content,
+  .card-desc {
+    text-align: left;
+  }
+
+  /* Navbar / footer / layout elements (if exist) */
+  .header,
+  .intro-container,
+  .counts-container,
+  .solutions-container,
+  .services-container,
+  .feedback-track,
+  .academy-buttons,
+  .footer-container {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  /* Container spacing for sections */
+  section {
+    padding: 1.5rem 1rem;
+  }
+}
