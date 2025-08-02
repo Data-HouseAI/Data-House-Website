@@ -37,35 +37,65 @@
   </header>
 
 
+  <section class="dashboard-price-section">
+    <div class="dashboard-price-container">
 
-  <div class="academy-section">
-
-    <!-- ✅ Title + Subtitle -->
-    <h1 class="academy-title">🎓 The Data House Academy</h1>
-    <h2 class="academy-subtitle">Empowering the Next Generation of Data Science & AI</h2>
-
-    <!-- ✅ Academy Image -->
-    <img src="Academy/academy1.jpg" alt="Academy Hero" class="academy-image" />
-
-    <!-- ✅ Content Block -->
-    <div class="academy-content">
-      <p>
-        At <span class="highlight">The Data House Academy</span>, we are on a mission to transform Sri Lanka’s youth into tomorrow’s data science innovators. We believe the journey into Data Science and Artificial Intelligence can begin as early as age 16, right after O/Ls. That’s why our academy is uniquely designed to nurture talent from school level to professional level, ensuring no passionate learner is left behind.<br><br>
-        Whether you're an <span class="highlight">O/L student, A/L student, university undergraduate, working professional, or someone planning a career switch</span>, our academy opens doors to high-demand domains such as Data Science, Bioinformatics, Artificial Intelligence and Drug Discovery.<br><br>
-        We’ve launched with four industry-relevant, beginner-friendly courses, each ending with a hands-on project challenge. The top three performers not only receive cash prizes but also a spot in our exclusive Talent Pool - a curated community of future data scientists. Outstanding students are offered the chance to collaborate on real-world research projects with our team, with the aim of publishing groundbreaking work and shaping global innovations.<br><br>
-        This isn’t just about learning, it’s about creating opportunities, building futures and making an impact.<br><br>
-        If you dream of contributing to cutting-edge research or launching a career in one of the world’s fastest-growing fields, <span class="highlight">The Data House Academy</span> is your starting point. Join us, and let’s build a data-driven Sri Lanka and a smarter, better world.
-      </p>
+      <!-- ✅ Image Carousel -->
+  <div class="slider-container">
+    <div class="slider-wrapper" id="sliderWrapper">
+      <!-- Slide 1 -->
+      <div class="slide">
+        <img src="Price/Dashboard/Dashboard_01/Dashboard_1_1.png" alt="Slide 1" />
+      </div>
+      <!-- Slide 2 -->
+      <div class="slide">
+        <img src="Price/Dashboard/Dashboard_01/Dashboard_1_2.png" alt="Slide 2" />
+      </div>
+      <!-- Slide 3 -->
+      <div class="slide">
+        <img src="Price/Dashboard/Dashboard_01/Dashboard_1_3.png" alt="Slide 3" />
+      </div>
+      <!-- Slide 4 -->
+      <div class="slide">
+        <img src="Price/Dashboard/Dashboard_01/Dashboard_1_4.png" alt="Slide 4" />
+      </div>
+      <!-- Slide 5 -->
+      <div class="slide">
+        <img src="Price/Dashboard/Dashboard_01/Dashboard_1_5.png" alt="Slide 5" />
+      </div>
     </div>
 
-    <!-- ✅ Buttons -->
-    <div class="academy-buttons">
-      <a href="services.html" class="academy-btn blink">Our Services</a>
-      <a href="courses.html" class="academy-btn blink">Our Courses</a>
-      <a href="pricing.html" class="academy-btn blink">Online Store</a>
-    </div>
+    <!-- Navigation Arrows -->
+    <button class="nav left" onclick="prevSlide()">&#10094;</button>
+    <button class="nav right" onclick="nextSlide()">&#10095;</button>
 
+    <!-- Dots -->
+    <div class="dots" id="dots"></div>
+
+    <!-- Slide Counter -->
+    <div class="counter" id="counter">1 / 5</div>
   </div>
+
+      <!-- ✅ Info Section -->
+      <div class="dashboard-info">
+        <h1 class="dashboard-title">IPL 2024 Dashboard Template</h1>
+        <p class="dashboard-price-description">After that need to add "dashboard price detail" section...</p>
+        <a class="dashboard-price-btn" href="https://forms.cloud.microsoft/r/gQDW1cUGNP?origin=lprLink" target="_blank">LKR 5,000.00</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ DASHBOARD DETAIL SECTION -->
+  <div class="price-services-container" id="module1">
+      <h2 class="price-service-title">About</h2>
+      <p class="price-service-content">
+        This course is designed to provide learners with a complete understanding of Power BI from connecting raw data sources 
+		to building interactive dashboards. You'll explore essential tools and techniques in Power BI, including data importing, 
+		preprocessing, relationship management, DAX calculations, visual customization, and storytelling through data. Ideal for students, 
+		professionals, and anyone aiming to build data-driven decision-making skills using modern BI tools.
+      </p>
+	</div>	
+
 
 
 
@@ -130,8 +160,7 @@
 </footer>
 <!-- ✅ FOOTER SECTION END -->
 
-
-<script src="script.js"></script>
+<script src="script_price.js"></script>
 
 </body>
 </html>
