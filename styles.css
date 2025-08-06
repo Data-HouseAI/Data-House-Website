@@ -2196,3 +2196,68 @@ body.dark-mode .course-service-content {
    margin-bottom: 5px;
   padding: 10px;
 }
+
+/* ✅✅✅ Mobile Navigation Enhancements ✅✅✅ */
+@media (max-width: 768px) {
+  /* Hide desktop nav */
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #ffffff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    z-index: 999;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+
+  body.dark-mode .navbar .nav-links {
+    background-color: #152238;
+  }
+
+  .navbar .nav-links a {
+    padding: 12px;
+    font-size: 1.1rem;
+    color: var(--nav-text);
+  }
+
+  /* Show when toggled */
+  .navbar .nav-links.mobile-active {
+    display: flex;
+  }
+
+  /* Hamburger Icon */
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--nav-text);
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  /* Rotate hamburger to 'X' */
+  .menu-toggle.active .bar1 {
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+
+  .menu-toggle.active .bar2 {
+    opacity: 0;
+  }
+
+  .menu-toggle.active .bar3 {
+    transform: rotate(45deg) translate(-6px, -6px);
+  }
+
+  /* Position menu toggle */
+  .navbar {
+    position: relative;
+  }
+}

@@ -87,3 +87,14 @@ document.querySelectorAll('.module-header').forEach(header => {
     }
   });
 });
+
+// ✅ Mobile Menu Toggle
+const mobileMenu = document.getElementById("mobileMenu");
+const navLinks = document.querySelector(".nav-links");
+
+if (mobileMenu && navLinks) {
+  mobileMenu.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+    navLinks.classList.toggle("mobile-active");
+  });
+}

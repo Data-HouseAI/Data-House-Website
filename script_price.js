@@ -72,3 +72,14 @@ function goToSlide(index) {
 
 // Auto slide (optional)
 // setInterval(nextSlide, 5000); // every 5 seconds
+
+// ✅ Mobile Menu Toggle
+const mobileMenu = document.getElementById("mobileMenu");
+const navLinks = document.querySelector(".nav-links");
+
+if (mobileMenu && navLinks) {
+  mobileMenu.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+    navLinks.classList.toggle("mobile-active");
+  });
+}
