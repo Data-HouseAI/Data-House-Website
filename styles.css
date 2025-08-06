@@ -1435,21 +1435,7 @@ body.dark-mode .academy-btn {
   transform: scale(1.05);
 }
 
-/* ✅ BLINKING ANIMATION */
-.blink {
-  animation: blinkText 1.2s infinite alternate;
-}
-
-@keyframes blinkText {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0.6;
-  }
-}
-
-/* ✅ ----------------------------------------------COURSES PAGE----------------------------------------------------------------- */
+/* =================================================== COURSES PAGE =================================================== */
 /* ===== Courses Page Styles START ===== */
 /* ==================== Updated: Styles for Courses Page ==================== */
 .page-title {
@@ -2195,4 +2181,105 @@ body.dark-mode .course-service-content {
   margin: 0 auto;
    margin-bottom: 5px;
   padding: 10px;
+}
+
+/* =================== MOBILE RESPONSIVENESS =================== */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 10px 5px;
+    align-items: flex-start;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .logo-text {
+    font-size: 1.1rem;
+  }
+
+  .navbar .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    background: var(--main-bg);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    display: none;
+    z-index: 999;
+  }
+
+  .navbar .nav-links.active {
+    display: flex;
+  }
+
+  .right-controls {
+    margin-top: 10px;
+  }
+
+  .full-slider {
+    height: 250px;
+  }
+
+  .slide-text {
+    font-size: 1.2rem;
+    margin-top: 60px;
+    padding: 10px 10px;
+  }
+
+  .intro-container,
+  .partners-slider,
+  .importance-block,
+  .counts-container,
+  .bio-container,
+  .news-container,
+  .footer-container {
+    flex-direction: column !important;
+    gap: 20px !important;
+    align-items: stretch !important;
+    max-width: 100% !important;
+  }
+
+  .importance-img {
+    height: 180px;
+    max-width: 100%;
+  }
+
+  .service-img {
+    height: 200px;
+  }
+
+  .course-card img {
+    height: 140px;
+  }
+
+  .card-container,
+  .courses-container {
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+  }
+
+  .price-card {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .academy-btn,
+  .explore-button,
+  .service-btn,
+  .register-button,
+  .register-course-price-btn,
+  .bio-btn {
+    min-width: unset;
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+
+  .footer-column .logo-column img {
+    width: 120px;
+  }
 }
