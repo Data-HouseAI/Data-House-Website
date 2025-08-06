@@ -2204,11 +2204,11 @@ body.dark-mode .course-service-content {
     display: none;
     flex-direction: column;
     background-color: #ffffff;
-    position: absolute;
+    position: left;
     top: 100%;
     left: 0;
     width: 100%;
-    padding: 1rem;
+    padding: 2px;
     z-index: 999;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   }
@@ -2219,7 +2219,7 @@ body.dark-mode .course-service-content {
 
   .navbar .nav-links a {
     padding: 12px;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     color: var(--nav-text);
   }
 
@@ -2232,14 +2232,14 @@ body.dark-mode .course-service-content {
   .menu-toggle {
     display: block;
     cursor: pointer;
-    z-index: 1001;
+    z-index: 10;
   }
 
   .menu-toggle div {
-    width: 25px;
+    width: 100px;
     height: 3px;
     background-color: var(--nav-text);
-    margin: 5px 0;
+    margin: 2px 0;
     transition: 0.4s;
   }
 
