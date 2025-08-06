@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Data House</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="/favicon.png" type="image/png" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+		<img id="logoImage" src="Logo_light.png" alt="The Data House Logo" />
+		<span class="logo-text">The Data House</span>
+	</div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+		<li><a href="https://github.com/INSTITUTE-OF-SCIENTIFIC-INFORMATICS" target="_blank">ISI</a></li>
+		<li><a href="services.html">Services</a></li>
+        <li><a href="academy.html">Our Academy</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+		<li><a href="/login" class="login-button">Login</a> <!-- NEW: Login button --></li>
+      </ul>
+    </nav>
+
+
+    <div class="right-controls">
+      <label class="switch">
+        <input type="checkbox" id="modeToggle" />
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </header>
+
+
+  <section class="dashboard-price-section">
+    <div class="dashboard-price-container">
+
+      <!-- ✅ Image Carousel -->
+  <div class="slider-container">
+    <div class="slider-wrapper" id="sliderWrapper">
+      <!-- Slide 1 -->
+      <div class="slide">
+        <img src="Courses_Details/Course_01/course_01_1.png" alt="Slide 1" />
+      </div>
+      <!-- Slide 2 -->
+      <div class="slide">
+        <img src="Courses_Details/Course_01/course_01_1.png" alt="Slide 2" />
+      </div>
+      <!-- Slide 3 -->
+      <div class="slide">
+        <img src="Courses_Details/Course_01/course_01_1.png" alt="Slide 3" />
+      </div>
+      <!-- Slide 4 -->
+      <div class="slide">
+        <img src="Courses_Details/Course_01/course_01_1.png" alt="Slide 4" />
+      </div>
+      <!-- Slide 5 -->
+      <div class="slide">
+        <img src="Courses_Details/Course_01/course_01_1.png" alt="Slide 5" />
+      </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <button class="nav left" onclick="prevSlide()">&#10094;</button>
+    <button class="nav right" onclick="nextSlide()">&#10095;</button>
+
+    <!-- Dots -->
+    <div class="dots" id="dots"></div>
+
+    <!-- Slide Counter -->
+    <div class="counter" id="counter">1 / 5</div>
+  </div>
+
+      <!-- ✅ Info Section -->
+      <div class="dashboard-info">
+        <h1 class="dashboard-title">Data Analysis and Visualization with Power BI</h1>
+        <p class="dashboard-price-description">This is a comprehensive course designed to take you from beginner to advanced in using Power BI for real-world data analytics. You'll learn how to import, clean, analyze & visualize data through interactive dashboards. This course is perfect for anyone looking to turn raw data into clear, actionable business insights.</p>
+        <a class="dashboard-price-btn" href="https://forms.cloud.microsoft/r/gQDW1cUGNP?origin=lprLink" target="_blank">LKR 5,200.00</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ DASHBOARD DETAIL SECTION -->
+  <div class="navbar-courses">
+    <ul>
+      <li><a href="#module1">About</a></li>
+      <li><a href="#module2">Outcomes</a></li>
+	  <li><a href="#module3">Instructor</a></li>
+      <li><a href="#module4">Modules</a></li>
+
+      <!--<li><a href="#module5">Module 5</a></li>
+      <li><a href="#module6">Module 6</a></li>-->
+    </ul>
+  </div>
+  <div class="course-services-container" id="module1">
+      <h2 class="course-service-title">About</h2>
+      <p class="course-service-content">
+        This course is designed to provide learners with a complete understanding of Power BI from connecting raw data sources 
+		to building interactive dashboards. You'll explore essential tools and techniques in Power BI, including data importing, 
+		preprocessing, relationship management, DAX calculations, visual customization, and storytelling through data. Ideal for students, 
+		professionals, and anyone aiming to build data-driven decision-making skills using modern BI tools.
+      </p>
+	</div>	
+	
+	  <div class="course-services-container" id="module2">
+      <h2 class="course-service-title">Outcomes</h2>
+      <p class="course-service-content">
+	  By the end of this course, you will be able to <br><br>
+
+✅ Understand the Power BI ecosystem and its role in business intelligence.<br>
+
+✅ Import and clean data from multiple sources using Power BI tools.<br>
+
+✅ Manage relationships between data tables and model your data effectively.<br>
+
+✅ Write DAX measures and calculated columns to enhance analytics.<br>
+
+✅ Design visually compelling dashboards and reports using charts, cards, maps, and slicers.<br>
+
+✅ Apply formatting and interactivity to create user-friendly dashboards.<br>
+
+✅ Publish, share, and manage reports using Power BI Service.<br>
+
+✅ Complete a real-world hands-on project to showcase your learning.
+	</p>
+	</div>	
+	
+		  <div class="course-services-container" id="module3">
+      <h2 class="course-service-title">Instructor</h2>
+      <p class="course-service-content">
+       This course is led by Chiran Weerasinghe, a seasoned data professional with over 6 years of hands-on experience in 
+	   dashboard development and data analytics. Currently working as a Data Scientist at one of Sri Lanka’s top 
+	   leading bank, Chiran brings deep industry knowledge and real-world problem-solving expertise into the classroom.
+	  </p>
+	  <p class="course-service-content">
+		He holds a MSc in Data Science and Artificial Intelligence from the University of Sri Jayewardenepura, and 
+		completed his BSc in Physical Science degree at the University of Kelaniya. His academic foundation, combined with years 
+		of experience in building impactful Power BI dashboards for business decision-making, makes him a powerful mentor for aspiring data professionals.
+      </p>
+	</div>	
+	
+	  <div class="course-services-container" id="module4">
+      <h2 class="course-service-title">Modules</h2>
+	</div>	
+  <div class="container">
+	<div class="module" id="module1">
+		<h2 class="module-header">
+		Module 1: Introduction to Power BI
+		<span class="expand-btn">+</span>
+		</h2>
+		<div class="module-details">
+			<p>
+			🔹 What is Power BI?<br>
+
+			🔹 Power BI Desktop vs Service<br>
+
+			🔹 Use cases and industry relevance<br>
+			</p>
+		</div>
+	</div>
+
+	<div class="module" id="module1">
+		<h2 class="module-header">
+		Module 2: Data Importing & Preprocessing
+		<span class="expand-btn">+</span>
+		</h2>
+		<div class="module-details">
+			<p>
+			🔹 Connecting to Excel, CSV, web, and databases<br>
+
+			🔹 Data cleaning using Power Query Editor<br>
+
+			🔹 Removing duplicates, changing data types, and transforming columns<br>
+			</p>
+		</div>
+	</div>
+	
+		<div class="module" id="module1">
+		<h2 class="module-header">
+		Module 3: Data Modeling & Relationship Management
+		<span class="expand-btn">+</span>
+		</h2>
+		<div class="module-details">
+			<p>
+			🔹 Creating relationships between tables<br>
+
+			🔹 Understanding cardinality and filter directions<br>
+
+			🔹 Building a star schema for better performance<br>
+			</p>
+		</div>
+	</div>
+	
+		<div class="module" id="module1">
+		<h2 class="module-header">
+		Module 4: DAX Formulas and Measures
+		<span class="expand-btn">+</span>
+		</h2>
+		<div class="module-details">
+			<p>
+			🔹 Introduction to DAX<br>
+
+			🔹 Calculated columns vs measures<br>
+
+			🔹 Common DAX functions: SUM, CALCULATE, FILTER, etc.<br>
+			</p>
+		</div>
+	</div>
+	
+		<div class="module" id="module1">
+		<h2 class="module-header">
+		Module 5: Data Visualization
+		<span class="expand-btn">+</span>
+		</h2>
+		<div class="module-details">
+			<p>
+			🔹 Bar, line, pie, donut, table, and map visuals<br>
+
+			🔹 Using slicers, filters, and drill-through features<br>
+
+			🔹 Visual interactions and sorting<br>
+			</p>
+		</div>
+	</div>
+	
+		<div class="module" id="module1">
+		<h2 class="module-header">
+		Module 6: Formatting & Design Principles
+		<span class="expand-btn">+</span>
+		</h2>
+		<div class="module-details">
+			<p>
+			🔹 Themes, colors, and layout design<br>
+
+			🔹 Dynamic titles, tooltips, and conditional formatting<br>
+
+			🔹 Custom visuals from the marketplace<br>
+			</p>
+		</div>
+	</div>
+	
+		<div class="module" id="module1">
+		<h2 class="module-header">
+		Module 7: Publishing & Sharing Dashboards
+		<span class="expand-btn">+</span>
+		</h2>
+		<div class="module-details">
+			<p>
+			🔹 Publishing to Power BI Service<br>
+
+			🔹 Creating dashboards and sharing reports online<br>
+
+			🔹 Data refresh, workspace management, and collaboration<br>
+			</p>
+		</div>
+	</div>
+	
+		<div class="module" id="module1">
+		<h2 class="module-header">
+		Module 8: Final Project (Hands-On)
+		<span class="expand-btn">+</span>
+		</h2>
+		<div class="module-details">
+			<p>
+			🔹 Build a complete business dashboard using real-world data<br>
+
+			🔹 Apply all learned skills<br>
+
+			🔹 Submit for evaluation and receive feedback<br>
+			</p>
+		</div>
+	</div>
+	
+  </div>
+
+
+<!-- ✅ FOOTER SECTION START -->
+<footer class="footer-section">
+  <div class="footer-container">
+
+    <!-- ✅ Logo & Description -->
+    <div class="footer-column logo-column">
+      <img id="footerLogo" src="Footer/footer_light.png" alt="Footer Logo" />
+    </div>
+
+    <!-- ✅ Navigation Columns -->
+    <div class="footer-column">
+      <h4 class="footer-title">The Data House</h4>
+      <a href="about.html">About Us</a>
+      <a href="academy.html">Academy</a>
+      <a href="courses.html">Courses</a>
+ <a href="courses.html">Book Your Session</a>
+    </div>
+
+    <div class="footer-column">
+      <h4 class="footer-title">Services</h4>
+      <a href="services.html">Machine Learning</a>
+      <a href="Services.html">PowerBI Development</a>
+      <a href="Services.html">Data Analytics</a>
+      <a href="https://github.com/INSTITUTE-OF-SCIENTIFIC-INFORMATICS" target="_blank">Bio Informatics</a>
+    </div>
+
+    <div class="footer-column">
+      <h4 class="footer-title">Pricing</h4>
+      <a href="pricing.html">PowerBI Templetes</a>
+      <a href="pricing.html">Real World Data Sets</a>
+    </div>
+
+    <div class="footer-column">
+      <h4 class="footer-title">Contact</h4>
+      <a href="mailto:thedatahouseglobal@gmail.com">thedatahouseglobal@gmail.com</a>
+      <a href="tel:+95719900000">Phone - +95719900000</a>
+    </div>
+  </div>
+
+  <!-- ✅ Social Media Section -->
+  <div class="footer-socials">
+    <a href="https://www.facebook.com/profile.php?id=61563744280014" target="_blank"><img src="Social/fb.png" alt="Facebook" /></a>
+    <a href="https://www.linkedin.com/company/96927009/admin/page-posts/published/" target="_blank"><img src="Social/linkedin.png" alt="LinkedIn" /></a>
+    <a href="https://www.youtube.com/@TheDataHouse28" target="_blank"><img src="Social/yt.png" alt="YouTube" /></a>
+	<a href="https://www.instagram.com/_the_data_house?igsh=MW44aXluZWdhN21zbQ==" target="_blank"><img src="Social/insta.png" alt="Instegram" /></a>
+    <a href="https://supabase.com/database" target="_blank"><img src="Social/whatsapp.png" alt="WhatsApp" /></a>
+    <a href="https://www.tiktok.com/@thedatahouse?_t=ZS-8xzgdcCttD7&_r=1" target="_blank"><img src="Social/tiktok.png" alt="TikTok" /></a>
+  </div>
+
+  <!-- ✅ Bottom Footer Text -->
+  <div class="footer-bottom">
+    <p>
+      <b>© 2025 The Data House</b> <b>|</b> All rights reserved <b>|</b>
+      <a href="privacy.html">Privacy Policy</a> <b>|</b>
+      <a href="terms.html">Terms of Service</a> <b>|</b>
+      <b>Developed by “The Data House”</b>
+    </p>
+  </div>
+</footer>
+<!-- ✅ FOOTER SECTION END -->
+
+<script src="script_course.js"></script>
+
+</body>
+</html>
