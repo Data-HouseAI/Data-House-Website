@@ -2283,3 +2283,84 @@ body.dark-mode .course-service-content {
     width: 120px;
   }
 }
+
+/* =================== MOBILE NAVIGATION ENHANCEMENT =================== */
+.mobile-nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2.2rem;
+  color: var(--nav-text);
+  cursor: pointer;
+  margin-left: auto;
+  z-index: 1001;
+}
+
+@media (max-width: 768px) {
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+  }
+  .navbar .nav-links {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100vw;
+    background: var(--main-bg);
+    flex-direction: column;
+    gap: 0;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    padding: 0;
+    display: none;
+    z-index: 9999;
+  }
+  .navbar .nav-links.active {
+    display: flex;
+  }
+  .navbar .nav-links a {
+    padding: 18px 24px;
+    border-radius: 0;
+    border-bottom: 1px solid #eee;
+    font-size: 1.1rem;
+  }
+  .navbar .nav-links a:last-child {
+    border-bottom: none;
+  }
+  .right-controls {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+/* =================== IMAGE RESPONSIVENESS =================== */
+img, .logo img, .intro-image img, .partners-track img, .importance-img, .service-img, .course-card img, .academy-image, .bio-image img, .news-card img, .footer-column .logo-column img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =================== TOUCH TARGETS & SPACING =================== */
+@media (max-width: 768px) {
+  .academy-btn,
+  .explore-button,
+  .service-btn,
+  .register-button,
+  .register-course-price-btn,
+  .bio-btn {
+    min-width: unset;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 16px 0;
+    margin-bottom: 10px;
+  }
+  .footer-socials img {
+    width: 40px;
+    height: 40px;
+  }
+  .slide-text {
+    padding: 12px 8px;
+  }
+}
