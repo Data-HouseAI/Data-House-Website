@@ -150,14 +150,16 @@ input:checked + .slider:before {
 .full-slider {
   position: relative;
   width: 100%;
-  height: 650px;
+  height: 90vh;
+  align-items: center;
   overflow: hidden;
 }
 
-.full-slider .slide {
+.slide {
   position: absolute;
   width: 100%;
   height: 100%;
+  align-items: center;
   background-size: cover;
   background-position: center;
   opacity: 0;
@@ -168,16 +170,18 @@ input:checked + .slider:before {
   opacity: 1;
 }
 
+
 .slide-text {
-  margin-top: 160px;
-  font-size: 4rem;
+	margin-top: 160px;
   font-weight: bold;
-  padding: 20px 40px;
+  padding: clamp(8px, 4vw, 20px) clamp(12px, 6vw, 40px);
   border-radius: 8px;
   color: #ffd700;
   text-align: center;
   opacity: 0;
   transform: translateX(-100%);
+  font-size: clamp(1rem, 4vw, 4rem); /* Auto-adjust font size */
+  max-width: 90%; /* Keep text from touching edges */
 }
 
 .slide-text.animate-in {
@@ -205,19 +209,22 @@ body.dark-mode .slide-text {
 }
 
 @media (max-width: 768px) {
+
   .slide-text {
-    font-size: 1.5rem;
-    padding: 15px 20px;
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    padding: clamp(8px, 3vw, 16px);
+	text-align: center;
   }
 
   .navbar .nav-links {
     display: none;
   }
+
 }
 
 /* =================================================== INTRO SECTION =================================================== */
 .intro-section {
-  padding: 1px 1px;
+  padding: 30px 30px;
   background-color: var(--main-bg);
   color: var(--main-text);
 }
@@ -227,7 +234,7 @@ body.dark-mode .slide-text {
   flex-wrap: wrap;
   align-items: center;
   gap: 40px;
-  max-width: 1400px;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -244,7 +251,7 @@ body.dark-mode .slide-text {
 }
 
 .intro-title {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
 }
 
 @keyframes fadeDown {
@@ -297,7 +304,7 @@ body.dark-mode .partners-section {
 
 .partners-title {
   text-align: center;
-  font-size: 2rem;
+    font-size: clamp(1.5rem, 4vw, 2rem);
   margin-bottom: 40px;
   font-weight: bold;
   color: #152238;
@@ -332,6 +339,7 @@ body.dark-mode .partners-title {
 @media (max-width: 768px) {
   .partners-track img {
     height: 50px;
+	width: auto;
   }
 }
 
@@ -346,7 +354,7 @@ body.dark-mode .importance-section {
 
 .importance-heading {
   text-align: center;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
   margin-bottom: 60px;
   font-weight: bold;
   color: #152238;
@@ -385,7 +393,7 @@ body.dark-mode .importance-heading {
 }
 
 .importance-img-title {
-  font-size: 1.3rem;
+  font-size: clamp(0.1rem, 4vw, 1.4rem);
   font-weight: bold;
   margin-bottom: 5px;
   color: #152238;
@@ -395,7 +403,7 @@ body.dark-mode .importance-img-title {
 }
 
 .importance-text-box p {
-  font-size: 1.05rem;
+  font-size: clamp(0.1rem, 4vw, 1.05rem);
   line-height: 1.6;
   color: #000;
 }
@@ -447,6 +455,14 @@ body.dark-mode .explore-button {
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
+@media (max-width: 768px) {
+  .importance-img {
+    flex: 1 1 100%;   /* Take full width on mobile */
+    max-width: 100%;
+    height: auto;     /* Let height resize proportionally */
+  }
+}
+
 /* =================================================== COUNTS SECTION =================================================== */
 .section-divider {
   border: 0;
@@ -457,7 +473,7 @@ body.dark-mode .explore-button {
 
 .counts-section {
   background-color: #e6e6e6;
-  padding: 40px 20px;
+  padding: 60px 60px;
   text-align: center;
 }
 
@@ -470,17 +486,17 @@ body.dark-mode .counts-section {
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
-  max-width: 1300px;
+  max-width: auto;
   margin: auto;
 }
 
 .count-box {
   background-color: #152238;
   color: #ffd700;
-  padding: 10px 5px;
+  padding: 10px 10px;
   border-radius: 10px;
-  width: 200px;
-  flex: 1 1 180px;
+  width: 100px;
+  flex: 1 1 100px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
@@ -490,12 +506,12 @@ body.dark-mode .count-box {
 }
 
 .count-number {
-  font-size: 3rem;
+font-size: clamp(0.1rem, 4vw, 3rem);
   font-weight: bold;
 }
 
 .count-title {
-  font-size: 1.2rem;
+font-size: clamp(1rem, 4vw, 1.2rem);
   margin-top: 10px;
   font-weight: 600;
 }
@@ -509,8 +525,9 @@ body.dark-mode .count-box {
 
   .count-box {
     width: 100%;
-    max-width: 300px;
+    max-width: auto;
     margin: auto;
+	flex: 1 1 100%;   /* Take full width on mobile */    /* Let height resize proportionally */
   }
 }
 
@@ -518,7 +535,7 @@ body.dark-mode .count-box {
 
 .feedback-section {
   background-color: #ffffff;
-  padding: 30px 10px;
+  padding: 30px 30px;
 }
 body.dark-mode .feedback-section {
   background-color: #152238;
@@ -526,7 +543,7 @@ body.dark-mode .feedback-section {
 
 .feedback-title {
   text-align: center;
-  font-size: 2rem;
+font-size: clamp(0.1rem, 4vw, 2rem);
   margin-bottom: 40px;
   font-weight: bold;
   color: #152238;
@@ -592,7 +609,7 @@ body.dark-mode .feedback-card img {
 
 .feedback-text {
   font-weight: bold;
-  font-size: 0.95rem;
+font-size: clamp(0.1rem, 4vw, 0.95rem);
   margin-bottom: 15px;
   color: #ffd700;
 }
@@ -602,7 +619,7 @@ body.dark-mode .feedback-text {
 
 .user-info p {
   margin: 0;
-  font-size: 0.9rem;
+font-size: clamp(0.1rem, 4vw, 0.9rem);
   color: #ffffff;
 }
 body.dark-mode .user-info p {
@@ -653,6 +670,9 @@ body.dark-mode .feedback-nav {
   color: #ffd700;
 }
 
+
+
+
 /* Optional: responsive positioning for buttons */
 @media (max-width: 768px) {
   .feedback-nav {
@@ -662,52 +682,52 @@ body.dark-mode .feedback-nav {
 }
 
 /* =================================================== ACADEMY SECTION =================================================== */
-.academy-section {
+.academy-section-main {
   background-color: #e6e6e6;
-  padding: 30px 10px;
+  padding: 30px 30px;
   text-align: center;
 }
-body.dark-mode .academy-section {
+body.dark-mode .academy-section-main {
   background-color: #192841;
 }
 
-.academy-title {
-  font-size: 2rem;
+.academy-title-main {
+font-size: clamp(0.1rem, 4vw, 2rem);
   margin-bottom: 40px;
   font-weight: bold;
   color: #152238;
 }
-body.dark-mode .academy-title {
+body.dark-mode .academy-title-main {
   color: #ffd700;
 }
 
-.academy-content {
+.academy-content-main {
   max-width: 1300px;
   margin: 0 auto;
-  font-size: 1.1rem;
+font-size: clamp(0.1rem, 4vw, 1.05rem);
   line-height: 1.8;
   text-align: justify;
 }
 
-.academy-content p {
+.academy-content-main p {
   margin-bottom: 20px;
   color: #000000;
 }
-body.dark-mode .academy-content p {
+body.dark-mode .academy-content-main p {
   color: #ffffff;
 }
 
 /* ✅ Highlighted phrases */
-.academy-content .highlight {
+.academy-content-main .highlight {
   font-weight: bold;
   color: #152238;
 }
-body.dark-mode .academy-content .highlight {
+body.dark-mode .academy-content-main .highlight {
   color: #ffd700;
 }
 
 /* ✅ Buttons under content */
-.academy-buttons {
+.academy-buttons-main {
   margin-top: 30px;
   display: flex;
   justify-content: center;
@@ -715,7 +735,7 @@ body.dark-mode .academy-content .highlight {
   flex-wrap: wrap;
 }
 
-.academy-btn {
+.academy-btn-main {
   padding: 12px 24px;
   border-radius: 8px;
   font-weight: bold;
@@ -724,12 +744,12 @@ body.dark-mode .academy-content .highlight {
   background-color: #152238;
   color: #ffd700;
 }
-body.dark-mode .academy-btn {
+body.dark-mode .academy-btn-main {
   background-color: #ffd700;
   color: #152238;
 }
 
-.academy-btn:hover {
+.academy-btn-main:hover {
   transform: scale(1.05);
 }
 
@@ -737,7 +757,7 @@ body.dark-mode .academy-btn {
 
 .bio-section {
   background-color: #e6e6e6;
-  padding: 40px 20px;
+  padding: 30px 30px;
 }
 body.dark-mode .bio-section {
   background-color: #192841;
@@ -745,7 +765,7 @@ body.dark-mode .bio-section {
 
 .bio-title {
   text-align: center;
-  font-size: 2rem;
+font-size: clamp(0.1rem, 4vw, 2rem);
   margin-bottom: 40px;
   font-weight: bold;
   color: #152238;
@@ -760,7 +780,7 @@ body.dark-mode .bio-title {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 1400px;
+  max-width: 1300px;
   margin: auto;
 }
 
@@ -779,7 +799,7 @@ body.dark-mode .bio-title {
 
 .bio-content {
   flex: 1 1 700px;
-  font-size: 1.1rem;
+font-size: clamp(0.1rem, 4vw, 1.05rem);
   line-height: 1.8;
   text-align: justify;
   color: #000000;
@@ -850,7 +870,7 @@ body.dark-mode .bio-btn {
 
 .news-section {
   background-color: #ffffff;
-  padding: 30px 20px;
+  padding: 30px 30px;
 }
 body.dark-mode .news-section {
   background-color: #152238;
@@ -858,7 +878,7 @@ body.dark-mode .news-section {
 
 .news-title {
   text-align: center;
-  font-size: 2rem;
+font-size: clamp(0.1rem, 4vw, 2rem);
   font-weight: bold;
   margin-bottom: 40px;
   color: #152238;
@@ -907,7 +927,7 @@ body.dark-mode .news-card {
 .news-card-title {
   font-weight: bold;
   margin-bottom: 12px;
-  font-size: 1.25rem;
+font-size: clamp(0.1rem, 4vw, 1.25rem);
   color: #ffd700;
 }
 body.dark-mode .news-card-title {
@@ -915,7 +935,7 @@ body.dark-mode .news-card-title {
 }
 
 .news-card-content {
-  font-size: 0.95rem;
+font-size: clamp(0.1rem, 4vw, 0.95rem);
   color: #ffffff;
 }
 body.dark-mode .news-card-content {
@@ -2259,7 +2279,7 @@ body.dark-mode .course-service-content {
     justify-content: center;
     align-items: left;
     position: fixed;
-    top: 0;
+    top: -100px;
     left: 0;
     width: 100%;
     height: 100%;
