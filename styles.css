@@ -2216,7 +2216,7 @@ body.dark-mode .course-service-content {
   padding: 0.75rem 1rem;
   border-radius: 8px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-  z-index: 1000;
+  z-index: 2;
 }
 
 body.dark-mode .navbar .nav-links {
@@ -2224,7 +2224,7 @@ body.dark-mode .navbar .nav-links {
 }
 
 .navbar .nav-links a {
-  padding: 12px;
+  padding: 2px;
   font-size: 0.85rem;
   color: #152238;
 }
@@ -2248,7 +2248,7 @@ body.dark-mode .navbar .nav-links a {
   left: 0;              /* Stick to the left corner */
   top: 50%;             /* Vertically center in navbar */
   transform: translateY(-50%);
-  z-index: 1100;        /* Above everything in navbar */
+  z-index: 2;        /* Above everything in navbar */
 }
 
 .menu-toggle div {
