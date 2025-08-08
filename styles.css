@@ -2198,79 +2198,83 @@ body.dark-mode .course-service-content {
 }
 
 /* ✅✅✅ Mobile Navigation Enhancements ✅✅✅ */
-@media (max-width: 768px) {
-  /* Hide desktop nav */
-/* ✅ New */
+/* =========================
+   ✅ MOBILE MENU STYLES
+   ========================= */
+
+/* Navigation links (hidden by default in mobile) */
 .navbar .nav-links {
   display: none;
   flex-direction: column;
   background-color: #ffffff;
   position: absolute;
-  top: 100%;
-  left: 0px;                /* Match mobileMenu left offset */
-  width: auto;              /* 👌 Only grow to fit content */
-  min-width: 180px;         /* Optional minimum width */
-  max-width: 240px;         /* Optional max */
+  top: 100%;         /* Right below the navbar */
+  left: 0;           /* Stick to left corner */
+  width: auto;       /* Fit content only */
+  min-width: 180px;
+  max-width: 240px;
   padding: 0.75rem 1rem;
   border-radius: 8px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-  z-index: 1;
+  z-index: 1000;
 }
 
 body.dark-mode .navbar .nav-links {
-    background-color: #152238;
-  }
+  background-color: #152238;
+}
 
 .navbar .nav-links a {
-    padding: 12px;
-    font-size: 0.8rem;
-    color: #152238;
-  }
-
+  padding: 12px;
+  font-size: 0.85rem;
+  color: #152238;
+}
 
 body.dark-mode .navbar .nav-links a {
-    color: #ffd700;
-  }
-  
-  /* Show when toggled */
-.navbar .nav-links.mobile-active {
-    display: flex;
-  }
+  color: #ffd700;
+}
 
-/* 📍 Update this block in your styles.css */
+/* Show menu when toggled */
+.navbar .nav-links.mobile-active {
+  display: flex;
+}
+
+/* =========================
+   ✅ HAMBURGER ICON
+   ========================= */
 .menu-toggle {
   display: block;
   cursor: pointer;
-  position: absolute;      /* 🔄 Changed from static */
-  left: 0px;              /* 👈 Pushes to the left side */
-  top: 50%;                /* 👇 Vertically centers */
+  position: absolute;   /* Allows left-corner positioning */
+  left: 0;              /* Stick to the left corner */
+  top: 50%;             /* Vertically center in navbar */
   transform: translateY(-50%);
-	z-index: 1;
-  }
+  z-index: 1100;        /* Above everything in navbar */
+}
 
-  .menu-toggle div {
-    width: 20px;
-    height: 3px;
-    background-color: var(--nav-text);
-    margin: 1px 0;
-    transition: 0.4s;
-  }
+.menu-toggle div {
+  width: 24px;
+  height: 3px;
+  background-color: var(--nav-text);
+  margin: 4px 0;
+  transition: 0.4s;
+}
 
-  /* Rotate hamburger to 'X' */
-  .menu-toggle.active .bar1 {
-    transform: rotate(-45deg) translate(-6px, 6px);
-  }
+/* Rotate hamburger into 'X' */
+.menu-toggle.active .bar1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
 
-  .menu-toggle.active .bar2 {
-    opacity: 0;
-  }
+.menu-toggle.active .bar2 {
+  opacity: 0;
+}
 
-  .menu-toggle.active .bar3 {
-    transform: rotate(45deg) translate(-6px, -6px);
-  }
+.menu-toggle.active .bar3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
 
-  /* Position menu toggle */
-  .navbar {
-    position: relative;
-  }
+/* =========================
+   ✅ NAVBAR BASE
+   ========================= */
+.navbar {
+  position: relative; /* Needed for absolute positioning of toggle & dropdown */
 }
