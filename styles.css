@@ -50,6 +50,10 @@ body {
   white-space: nowrap;
 }
 
+.logo-text a {
+  text-decoration: none;
+}
+
 /* Navbar */
 .navbar .nav-links {
   display: flex;
@@ -2201,3 +2205,70 @@ body.dark-mode .course-service-content {
 /* =========================
    ✅ MOBILE MENU STYLES
    ========================= */
+/* ========================= */
+/* ✅ Full-Width Popup Mobile Menu */
+/* ========================= */
+
+/* ✅ Adjust logo container to align hamburger */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* space between logo text and hamburger */
+}
+
+/* ✅ Hamburger styling */
+.menu-toggle {
+  display: none; /* hidden on desktop */
+  cursor: pointer;
+    z-index: 1001; /* above overlay */
+}
+
+.menu-toggle div {
+  width: 25px;
+  height: 3px;
+  background-color: var(--nav-text);
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* ✅ Hamburger turns into 'X' */
+.menu-toggle.active .bar1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.menu-toggle.active .bar2 {
+  opacity: 0;
+}
+.menu-toggle.active .bar3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* ✅ Mobile only */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+
+  body.dark-mode .navbar .nav-links {
+    background-color: #152238;
+  }
+
+  .navbar .nav-links.mobile-active {
+    display: flex;
+  }
+}
