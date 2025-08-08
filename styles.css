@@ -2214,7 +2214,7 @@ body.dark-mode .course-service-content {
   padding: 0.75rem 1rem;
   border-radius: 8px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-  z-index: 10;
+  z-index: 1;
 }
 
 body.dark-mode .navbar .nav-links {
@@ -2245,7 +2245,7 @@ body.dark-mode .navbar .nav-links a {
   left: 20px;              /* 👈 Pushes to the left side */
   top: 50%;                /* 👇 Vertically centers */
   transform: translateY(-50%);
-	z-index: 10;
+	z-index: 1;
   }
 
   .menu-toggle div {
