@@ -2207,7 +2207,7 @@ body.dark-mode .course-service-content {
   background-color: #ffffff;
   position: absolute;
   top: 100%;
-  left: 20px;                /* Match mobileMenu left offset */
+  left: 0px;                /* Match mobileMenu left offset */
   width: auto;              /* 👌 Only grow to fit content */
   min-width: 180px;         /* Optional minimum width */
   max-width: 240px;         /* Optional max */
