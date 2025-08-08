@@ -160,6 +160,7 @@ input:checked + .slider:before {
   width: 100%;
   height: 100%;
   align-items: center;
+    display: flex; /* So we can center text */
   background-size: cover;
   background-position: center;
   opacity: 0;
@@ -168,13 +169,14 @@ input:checked + .slider:before {
 
 .full-slider .slide.active {
   opacity: 1;
+  position: relative;
 }
 
 
 .slide-text {
-	margin-top: 160px;
+
   font-weight: bold;
-  padding: clamp(8px, 4vw, 20px) clamp(12px, 6vw, 40px);
+  padding: 20px;
   border-radius: 8px;
   color: #ffd700;
   text-align: center;
@@ -197,6 +199,7 @@ input:checked + .slider:before {
 
 .blink {
   animation: blinkText 2.2s linear infinite;
+    font-size: clamp(1rem, 4vw, 4rem);
 }
 
 @keyframes blinkText {
@@ -211,7 +214,7 @@ body.dark-mode .slide-text {
 @media (max-width: 768px) {
 
   .slide-text {
-    font-size: clamp(1rem, 4vw, 1.5rem);
+    font-size: clamp(0.1rem, 4vw, 1.5rem);
     padding: clamp(8px, 3vw, 16px);
 	text-align: center;
   }
