@@ -2252,7 +2252,7 @@ body.dark-mode .course-service-content {
     display: none;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     position: fixed;
     top: 0;
     left: 0;
