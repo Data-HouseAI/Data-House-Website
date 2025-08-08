@@ -2213,7 +2213,7 @@ body.dark-mode .course-service-content {
 .logo {
   display: flex;
   align-items: center;
-  gap: 40px; /* space between logo text and hamburger */
+  gap: 20px; /* space between logo text and hamburger */
 }
 
 /* ✅ Hamburger styling */
