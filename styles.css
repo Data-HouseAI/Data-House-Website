@@ -2213,7 +2213,8 @@ body.dark-mode .course-service-content {
 .logo {
   display: flex;
   align-items: center;
-  gap: 20px; /* space between logo text and hamburger */
+  gap: clamp(20px, 2vw, 14px); /* responsive space */
+  flex-wrap: nowrap; /* prevent breaking into two lines */
 }
 
 /* ✅ Hamburger styling */
@@ -2258,7 +2259,7 @@ body.dark-mode .course-service-content {
     justify-content: center;
     align-items: left;
     position: fixed;
-    top: -100px;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
