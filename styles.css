@@ -2214,7 +2214,7 @@ body.dark-mode .course-service-content {
   padding: 0.75rem 1rem;
   border-radius: 8px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-  z-index: 999;
+  z-index: 10;
 }
 
 body.dark-mode .navbar .nav-links {
@@ -2224,9 +2224,14 @@ body.dark-mode .navbar .nav-links {
 .navbar .nav-links a {
     padding: 12px;
     font-size: 0.8rem;
-    color: var(--nav-text);
+    color: #152238;
   }
 
+
+body.dark-mode .navbar .nav-links a {
+    color: #ffd700;
+  }
+  
   /* Show when toggled */
 .navbar .nav-links.mobile-active {
     display: flex;
