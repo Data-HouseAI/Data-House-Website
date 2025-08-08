@@ -220,6 +220,13 @@ body.dark-mode .slide-text {
     display: none;
   }
 
+.slide {
+	    width: 100%;
+    max-width: auto;
+    margin: auto;
+  height: clamp(280px, 80vh, 800px);
+	flex: 1 1 100%;
+}
 }
 
 /* =================================================== INTRO SECTION =================================================== */
