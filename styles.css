@@ -2254,7 +2254,7 @@ body.dark-mode .course-service-content {
 .logo {
   display: flex;
   align-items: center;
-  gap: clamp(20px, 2vw, 14px); /* responsive space */
+  gap: clamp(10px, 2vw, 14px); /* responsive space */
   flex-wrap: nowrap; /* prevent breaking into two lines */
 }
 
