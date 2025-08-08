@@ -711,6 +711,7 @@ font-size: clamp(0.1rem, 4vw, 1.05rem);
 
 .academy-content-main p {
   margin-bottom: 20px;
+  font-size: clamp(0.1rem, 4vw, 1.05rem);
   color: #000000;
 }
 body.dark-mode .academy-content-main p {
@@ -720,6 +721,7 @@ body.dark-mode .academy-content-main p {
 /* ✅ Highlighted phrases */
 .academy-content-main .highlight {
   font-weight: bold;
+  font-size: clamp(0.1rem, 4vw, 1.05rem);
   color: #152238;
 }
 body.dark-mode .academy-content-main .highlight {
@@ -808,6 +810,15 @@ body.dark-mode .bio-content {
   color: #ffffff;
 }
 
+.bio-content p{
+font-size: clamp(0.1rem, 4vw, 1.05rem);
+  color: #000000;
+}
+body.dark-mode .bio-content p {
+  color: #ffffff;
+}
+
+
 /* ✅ Highlight */
 .bio-highlight {
   font-weight: bold;
@@ -821,9 +832,11 @@ body.dark-mode .bio-highlight {
   padding-left: 20px;
   margin-top: 10px;
   margin-bottom: 20px;
+
 }
 .bio-list li {
   margin-bottom: 12px;
+    font-size: clamp(0.1rem, 4vw, 1.05rem);
 }
 
 /* ✅ Button styling */
@@ -1053,7 +1066,7 @@ body.dark-mode .footer-column a:hover {
 .footer-bottom {
   margin-top: 30px;
   text-align: center;
-  font-size: 0.95rem;
+font-size: clamp(0.1rem, 4vw, 0.95rem);
   color: #152238;
 }
 body.dark-mode .footer-bottom {
