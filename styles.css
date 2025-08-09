@@ -1120,118 +1120,174 @@ body.dark-mode .footer-bottom a:hover {
 
 
 /* ✅ ABOUT PAGE TOP BANNER STYLES */
-.about-banner-container {
-  width: 100%;
-  overflow: hidden;
-}
 
-.about-banner-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
-
-
-/* ✅ ABOUT SECTION STYLES */
-/* ✅ ABOUT SECTION STYLES */
-
-
-.about-section {
+.About-explain-section {
   background-color: #e6e6e6;
-  padding: 30px 20px;
-  display: flex;
-  justify-content: center; /* ✅ Center horizontally */
+  padding: 30px 30px;
+  text-align: center;
+  margin: auto;
+  
 }
 
-body.dark-mode .about-section {
+.About-explain-section-content {
+max-width: 1300px;
+  padding: 5px 5px;
+  text-align: center;
+  margin: auto;
+  
+}
+
+body.dark-mode .About-explain-section {
   background-color: #192841;
 }
 
-.about-container {
-  width: 100%;
-  max-width: 1300px;
-  margin: 0 auto; /* ✅ Center on all screen sizes */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* ✅ Center content inside */
-  gap: 10px;
-  padding: 0 20px;
-}
-
-
-/* ✅ Single Box */
-.about-box {
-  background-color: #e6e6e6;
-  border-radius: 15px;
-  padding: 10px;
-  border: 2px solid #48494B;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
-  width: 100%;              /* ✅ Full width within container */
-  height: 100%;
-  max-width: 1300px;        /* ✅ Don't exceed on large screens */
-  box-sizing: border-box;   /* ✅ Prevent overflow from padding */
-}
-
-body.dark-mode .about-box {
-  background-color: #192841;
-  border-color: #04D9ff;
-}
-
-.about-title {
-  font-size: 2rem;
-  margin-bottom: 20px;
+.About-explain-title {
+font-size: clamp(0.1rem, 4vw, 2rem);
   font-weight: bold;
   color: #152238;
-  text-align: center;
+  margin-bottom: 10px;
 }
 
-body.dark-mode .about-title {
+body.dark-mode .About-explain-title {
   color: #ffd700;
 }
 
-.about-box p {
-  font-size: 1.1rem;
-  line-height: 1.7;
+.About-explain-content p {
+font-size: clamp(0.1rem, 4vw, 1.1rem);
+  line-height: 1.8;
+  text-align: left;
   color: #000000;
 }
 
-body.dark-mode .about-box p {
+body.dark-mode .About-explain-content p {
   color: #ffffff;
 }
 
-.about-box .highlight {
+.About-explain-content .highlight {
   font-weight: bold;
+  font-size: clamp(0.1rem, 4vw, 1.1rem);
   color: #152238;
 }
 
-body.dark-mode .about-box .highlight {
+body.dark-mode .About-explain-content .highlight {
   color: #ffd700;
 }
 
 
-/* ✅ GLOWING BORDER EFFECT ONLY - NO MOVING LINE */
-.animated-border {
-  position: relative;
-  border: 2px solid #04D9ff; /* Default glowing border for dark mode */
-  border-radius: 15px;
-  padding: 20px;
-  z-index: 0;
-  box-shadow: 0 0 12px #04D9ff;
-  transition: box-shadow 0.3s ease;
+.vision-section {
+  background-color: #ffffff;
+  padding: 30px 30px;
+  text-align: center;
+  margin: auto;
+  
 }
 
-/* ✅ Light mode glowing border */
-body:not(.dark-mode) .animated-border {
-  border-color: #48494B;
-  box-shadow: 0 0 12px #48494B;
+.vision-section-content {
+max-width: 1300px;
+  padding: 5px 5px;
+  text-align: center;
+  margin: auto;
+  
+}
+
+body.dark-mode .vision-section {
+  background-color: #152238;
+}
+
+.vision-title {
+font-size: clamp(0.1rem, 4vw, 2rem);
+  font-weight: bold;
+  color: #152238;
+  margin-bottom: 10px;
+}
+
+body.dark-mode .vision-title {
+  color: #ffd700;
+}
+
+.vision-content p {
+font-size: clamp(0.1rem, 4vw, 1.1rem);
+  line-height: 1.8;
+  text-align: left;
+  color: #000000;
+}
+
+body.dark-mode .vision-content p {
+  color: #ffffff;
+}
+
+.vision-content .highlight {
+  font-weight: bold;
+  font-size: clamp(0.1rem, 4vw, 1.1rem);
+  color: #152238;
+}
+
+body.dark-mode .vision-content .highlight {
+  color: #ffd700;
+}
+
+
+
+
+
+
+
+.mission-section {
+  background-color: #e6e6e6;
+  padding: 30px 30px;
+  text-align: center;
+  margin: auto;
+  
+}
+
+.mission-section-content {
+max-width: 1300px;
+  padding: 5px 5px;
+  text-align: center;
+  margin: auto;
+  
+}
+
+body.dark-mode .mission-section {
+  background-color: #192841;
+}
+
+.mission-title {
+font-size: clamp(0.1rem, 4vw, 2rem);
+  font-weight: bold;
+  color: #152238;
+  margin-bottom: 10px;
+}
+
+body.dark-mode .mission-title {
+  color: #ffd700;
+}
+
+.mission-content p {
+font-size: clamp(0.1rem, 4vw, 1.1rem);
+  line-height: 1.8;
+  text-align: left;
+  color: #000000;
+}
+
+body.dark-mode .mission-content p {
+  color: #ffffff;
+}
+
+.mission-content .highlight {
+  font-weight: bold;
+  font-size: clamp(0.1rem, 4vw, 1.1rem);
+  color: #152238;
+}
+
+body.dark-mode .mission-content .highlight {
+  color: #ffd700;
 }
 
 /* ✅ SOLUTIONS SECTION (What We Do) */
 .solutions-section {
   background-color: #ffffff;
-  padding: 30px 20px;
+  padding: 30px 30px;
 }
 
 body.dark-mode .solutions-section {
@@ -1244,7 +1300,7 @@ body.dark-mode .solutions-section {
 }
 
 .solutions-title {
-  font-size: 2rem;
+  font-size: clamp(0.1rem, 4vw, 2rem);
   font-weight: bold;
   text-align: center;
   margin-bottom: 30px;
@@ -1256,7 +1312,7 @@ body.dark-mode .solutions-title {
 }
 
 .solutions-description {
-  font-size: 1.1rem;
+  font-size: clamp(0.1rem, 4vw, 1.1rem);
   color: #000000;
   line-height: 1.8;
   text-align: left;
@@ -1283,7 +1339,7 @@ body.dark-mode .solutions-description .highlight {
 
 .solution-point-title {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: clamp(0.1rem, 4vw, 1.2rem);
   color: #152238;
   margin-bottom: 8px;
 }
@@ -1293,7 +1349,7 @@ body.dark-mode .solution-point-title {
 }
 
 .solution-point-desc {
-  font-size: 1rem;
+  font-size: clamp(0.1rem, 4vw, 1.1rem);
   color: #000000;
   line-height: 1.6;
 }
@@ -1307,7 +1363,7 @@ body.dark-mode .solution-point-desc {
 /* =================================================== services.html =================================================== */
 .services-section {
   background-color: #ffffff;
-  padding: 30px 20px;
+  padding: 30px 30px;
 }
 body.dark-mode .services-section {
   background-color: #152238;
@@ -1323,7 +1379,7 @@ body.dark-mode .services-section {
 
 .services-page-title {
   text-align: center;
-  font-size: 2.5rem;
+font-size: clamp(0.1rem, 4vw, 2rem);
   font-weight: bold;
   color: #152238;
 }
@@ -1338,7 +1394,7 @@ body.dark-mode .services-page-title {
 }
 
 .service-title {
-  font-size: 1.6rem;
+font-size: clamp(0.1rem, 4vw, 1.4rem);
   font-weight: bold;
   color: #152238;
   margin-top: 10px;
@@ -1349,7 +1405,7 @@ body.dark-mode .service-title {
 }
 
 .service-content {
-  font-size: 1.05rem;
+font-size: clamp(0.1rem, 4vw, 1.05rem);
   line-height: 2;
   color: #000000;
 }
@@ -1361,9 +1417,9 @@ body.dark-mode .service-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 160px;
+  gap: 30px;
   margin-top: 15px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .service-btn {
@@ -1396,6 +1452,16 @@ body.dark-mode .service-btn {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.5; }
 }
+
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .service-img {
+flex: 1 1 100%;
+  }
+}
+
+
 /* ✅ ----------------------------------------------ACADEMY PAGE----------------------------------------------------------------- */
 /* ✅ ACADEMY SECTION */
 .academy-section {
@@ -1403,6 +1469,7 @@ body.dark-mode .service-btn {
   padding: 30px 30px;
   text-align: center;
   margin: auto;
+    max-width: 1300px;
   
 }
 
@@ -1512,6 +1579,7 @@ body.dark-mode .academy-btn {
   text-align: center;
   font-weight: bold;
   color: #152238;
+  font-size: clamp(0.1rem, 4vw, 2rem);
 }
 
 body.dark-mode .page-title {
@@ -1519,7 +1587,7 @@ body.dark-mode .page-title {
 }
 
 .courses-section {
-  padding: 30px 10px;
+  padding: 30px 30px;
   background-color: #ffffff;
 }
 
@@ -1530,21 +1598,25 @@ body.dark-mode .courses-section {
 .courses-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-  gap: 30px;
-  max-width: 1400px;
+  gap: 10px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
 .course-card {
   background-color: #e6e6e6;
-  padding: 20px;
+    width: 400px;
+  padding: 1rem;
   border-radius: 10px;
-  margin-bottom: 10px;
+    box-sizing: border-box;
+  margin-top: 30px;
+  margin-bottom: 30px;
+    text-align: left;
   flex-direction: column;
     border: 2px solid #192841; /* Light mode default */
-  border-radius: 12px;
-  overflow: hidden;
 }
+
+
 
 body.dark-mode .course-card {
   background-color: #203354;
@@ -1557,13 +1629,14 @@ body.dark-mode .course-card {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 10px;
-  height: 250px;
+  flex: 1 1 100%;
 }
 
 .card-title {
   text-align: center;
   font-weight: bold;
   color: #000000;
+  font-size: clamp(0.1rem, 4vw, 1.4rem);
 }
 
 body.dark-mode .card-title {
@@ -1575,6 +1648,7 @@ body.dark-mode .card-title {
   font-weight: bold;
   color: #000000;
   text-align: left;
+    font-size: clamp(0.1rem, 4vw, 1.1rem);
 }
 
 body.dark-mode .card-subtitle {
@@ -1585,6 +1659,7 @@ body.dark-mode .card-subtitle {
 .card-content {
   color: #000000;
   margin: 8px 0;
+    font-size: clamp(0.1rem, 4vw, 1.0rem);
 }
 
 body.dark-mode .card-description,
@@ -1596,6 +1671,14 @@ body.dark-mode .card-content {
   text-align: center;
   margin-top: 20px;
 }
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1px;
+  font-size: clamp(0.1rem, 4vw, 0.9rem);
+}
+
 
 .register-button {
   padding: 10px 20px;
@@ -1662,6 +1745,7 @@ body.dark-mode .register-course-price-btn {
   font-weight: bold;
   color: #152238;
   margin: 1rem 0;
+    font-size: clamp(0.1rem, 4vw, 2rem);
 }
 
 body.dark-mode .page-title {
@@ -1736,7 +1820,7 @@ body.dark-mode .instruction-title {
 /* Card Layout */
 .content-section-dashboard {
   background-color: #e6e6e6;
-  padding: 30px 10px;
+  padding: 30px 30px;
 }
 
 body.dark-mode .content-section-dashboard {
@@ -1769,13 +1853,13 @@ body.dark-mode .section-header {
   width: 100%;
   overflow: hidden;
   height: 250px;
-  margin-bottom: 1rem;
+  margin-bottom: -30px;
 }
 
 .carousel-images {
   display: flex;
   width: 100%;
-  height: 100%;
+flex: 1 1 100%;
   transition: transform 0.1s ease-in-out;
 }
 
@@ -1789,11 +1873,11 @@ body.dark-mode .section-header {
 
 /* Card Meta */
 /* === Button and Meta Styling === */
-.card-meta {
+.card-meta-price {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
-  font-size: 0.9rem;
+  margin-top: 15px;
+  font-size: clamp(0.1rem, 4vw, 0.9rem);
 }
 
 .downloads {
@@ -1939,6 +2023,7 @@ body.dark-mode .price-detail-card {
 .dashboard-price-section {
   background-color: #e6e6e6;
   padding: 2rem;
+    padding: 30px 30px;
 }
 body.dark-mode .dashboard-price-section {
   background-color: #152238;
@@ -1967,7 +2052,7 @@ body.dark-mode .dashboard-title {
 }
 .dashboard-price-description {
   color: #000000;
-  font-size: 1.0rem;
+  font-size: clamp(0.1rem, 4vw, 1.05rem);
 }
 body.dark-mode .dashboard-price-description {
   color: #ffffff;
@@ -1978,7 +2063,7 @@ body.dark-mode .dashboard-price-description {
   padding: 10px 60px;
   text-align: center;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: clamp(0.1rem, 4vw, 1.2rem);
   background-color: #152238;
   color: #ffd700;
   border: 2px solid #ffd700;
@@ -2026,16 +2111,33 @@ body.dark-mode .dashboard-detail-list {
   transition: transform 0.5s ease-in-out;
 }
 
-.slide {
+.slide-price {
   min-width: 900px;
   box-sizing: border-box;
 }
 
-.slide img {
+.slide-price img {
   width: 100%;
   height: auto;
   display: block;
   border-radius: 15px;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+.slide-price {
+  min-width: 100%;
+  box-sizing: border-box;
+  flex: 1 1 100%;
+}
+.slide-price img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+  flex: 1 1 100%;
+}
+
 }
 
 /* Navigation Arrows */
@@ -2045,7 +2147,7 @@ body.dark-mode .dashboard-detail-list {
   transform: translateY(-50%);
   background: rgba(255, 255, 255, 0.7);
   border: none;
-  font-size: 2rem;
+  font-size: clamp(0.1rem, 4vw, 2.0rem);
   cursor: pointer;
   padding: 0.5rem 1rem;
   border-radius: 50%;
@@ -2097,7 +2199,7 @@ body.dark-mode .dashboard-detail-list {
   color: white;
   padding: 4px 10px;
   border-radius: 10px;
-  font-size: 0.9rem;
+  font-size: clamp(0.1rem, 4vw, 0.9rem);
 }
 
 .price-services-container {
@@ -2105,11 +2207,30 @@ body.dark-mode .dashboard-detail-list {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  margin-top: 15px;
   	 margin-Bottom: 45px;
 }
 
+@media (max-width: 768px) {
+  .course-services-container {
+    padding-left: 5%;      /* relative gap for different screen sizes */
+    padding-right: 5%;
+    max-width: 100%;       /* Allow full width on mobile */
+    box-sizing: border-box;/* Include padding in width calc */
+  }
+}
+
+@media (max-width: 768px) {
+  .price-services-container {
+    padding-left: 5%;      /* relative gap for different screen sizes */
+    padding-right: 5%;
+    max-width: 100%;       /* Allow full width on mobile */
+    box-sizing: border-box;/* Include padding in width calc */
+  }
+}
+
 .price-service-title {
-  font-size: 1.6rem;
+  font-size: clamp(0.1rem, 4vw, 1.4rem);
   font-weight: bold;
   color: #152238;
   margin-top: 40px;
@@ -2120,7 +2241,7 @@ body.dark-mode .price-service-title {
 }
 
 .price-service-content {
-  font-size: 1.05rem;
+  font-size: clamp(0.1rem, 4vw, 1.05rem);
   line-height: 2;
   color: #000000;
     margin-top: 5px;
@@ -2130,6 +2251,12 @@ body.dark-mode .price-service-content {
   color: #ffffff;
 }
 
+@media (max-width: 768px) {
+  .price-services-container {
+    width: 100%;
+    margin: auto;
+  }
+}
 
 /* ================================================================== Navigator - Course Individual Page ================================================================== */
 
@@ -2180,7 +2307,7 @@ body.dark-mode .module h2 {
 
 .expand-btn {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: clamp(0.1rem, 4vw, 1.5rem);
   user-select: none;
   transition: transform 0.3s ease;
 }
@@ -2212,10 +2339,11 @@ body.dark-mode .module-details {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: clamp(0.1rem, 4vw, 1.2rem);
 }
 
 .course-services-container {
+		width:100%;
   max-width: 1300px;
   margin: 0 auto;
   display: flex;
@@ -2224,7 +2352,7 @@ body.dark-mode .module-details {
 }
 
 .course-service-title {
-  font-size: 1.6rem;
+  font-size: clamp(0.1rem, 4vw, 1.6rem);
   font-weight: bold;
   color: #152238;
   margin-top: 40px;
@@ -2236,7 +2364,7 @@ body.dark-mode .course-service-title {
 }
 
 .course-service-content {
-  font-size: 1.05rem;
+  font-size: clamp(0.1rem, 4vw, 1.05rem);
   line-height: 2;
   color: #000000;
     margin-top: 5px;
@@ -2247,7 +2375,8 @@ body.dark-mode .course-service-content {
 }
 
 .container {
-	max-width: 1300px;
+  max-width: 1300px;
+
   margin: 0 auto;
    margin-bottom: 5px;
   padding: 10px;
@@ -2327,5 +2456,42 @@ body.dark-mode .course-service-content {
 
   .navbar .nav-links.mobile-active {
     display: flex;
+  }
+}
+
+/* ✅ Hamburger styling */
+.menu-toggle-course {
+  display: none; /* hidden on desktop */
+  cursor: pointer;
+    z-index: 1001; /* above overlay */
+}
+
+.menu-toggle-course div {
+  width: 25px;
+  height: 3px;
+  background-color: #152238;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+  body.dark-mode .menu-toggle-course div {
+    background-color: #ffffff;
+  }
+  
+/* ✅ Hamburger turns into 'X' */
+.menu-toggle-course.active .bar1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.menu-toggle-course.active .bar2 {
+  opacity: 0;
+}
+.menu-toggle-course.active .bar3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* ✅ Mobile only */
+@media (max-width: 768px) {
+  .menu-toggle-course {
+    display: block;
   }
 }

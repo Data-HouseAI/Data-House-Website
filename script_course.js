@@ -20,6 +20,12 @@ toggle.addEventListener('change', () => {
   updateLogo();
 });
 
+// ✅ Full-width popup mobile menu
+document.getElementById('mobileMenucourse').addEventListener('click', function() {
+  this.classList.toggle('active');
+  document.querySelector('.nav-links').classList.toggle('mobile-active');
+});
+
 function updateLogo() {
   const isDark = document.body.classList.contains('dark-mode');
   logoImage.src = isDark ? 'Logo_dark.png' : 'Logo_light.png';
@@ -28,7 +34,7 @@ function updateLogo() {
 // Image Change
 
 let currentSlide = 0;
-const slides = document.querySelectorAll(".slide");
+const slides = document.querySelectorAll(".slide-price");
 const totalSlides = slides.length;
 const sliderWrapper = document.getElementById("sliderWrapper");
 const dotsContainer = document.getElementById("dots");
@@ -88,13 +94,3 @@ document.querySelectorAll('.module-header').forEach(header => {
   });
 });
 
-// ✅ Mobile Menu Toggle
-const mobileMenu = document.getElementById("mobileMenu");
-const navLinks = document.querySelector(".nav-links");
-
-if (mobileMenu && navLinks) {
-  mobileMenu.addEventListener("click", () => {
-    mobileMenu.classList.toggle("active");
-    navLinks.classList.toggle("mobile-active");
-  });
-}

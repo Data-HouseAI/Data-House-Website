@@ -9,33 +9,47 @@
 </head>
 <body>
   <header class="header">
+
+
 <div class="logo">
   <a href="index.html">
     <img id="logoImage" src="Logo_light.png" alt="The Data House Logo" />
 	 </a>
-</div>
-    <nav class="navbar">
-	<!-- ✅ Hamburger for mobile -->
-<div class="menu-toggle" id="mobileMenu">
-  <div class="bar1"></div>
-  <div class="bar2"></div>
-  <div class="bar3"></div>
+	   <div class="menu-toggle" id="mobileMenu">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
 </div>
 
+
+	<!-- ✅ Hamburger for mobile -->
+      <!-- ✅ Hamburger inside navbar -->
+
+	  
+     <nav class="navbar">
       <ul class="nav-links">
-        <li><a href="about.html">About Us</a></li>
+        <li><a href="index.html">About Us</a></li>
 <li><a href="https://github.com/INSTITUTE-OF-SCIENTIFIC-INFORMATICS" target="_blank">ISI</a></li>
 <li><a href="services.html">Services</a></li>
-        <li><a href="academy.html">Our Academy</a></li>
+        <li><a href="academy.html">Academy</a></li>
         <li><a href="courses.html">Courses</a></li>
         <li><a href="pricing.html">Pricing</a></li>
+        <!--<li><a href="#">Careers</a></li>-->
         <li><a href="contact.html">Contact Us</a></li>
-<li><a href="/login" class="login-button">Login</a> <!-- NEW: Login button --></li>
+<li>
+<a href="/login" class="login-button">Login</a> <!-- NEW: Login button -->
+</li>
       </ul>
     </nav>
 
 
     <div class="right-controls">
+<!--
+<button class="search-icon" aria-label="Search">
+🔍
+</button>
+-->
       <label class="switch">
         <input type="checkbox" id="modeToggle" />
         <span class="slider round"></span>
@@ -43,21 +57,14 @@
     </div>
   </header>
 
-
-<!-- ✅ ABOUT PAGE TOP BANNER START -->
-<div class="about-banner-container">
-  <img src="About/about_main.png" alt="About The Data House" class="about-banner-image" />
-</div>
-<!-- ✅ ABOUT PAGE TOP BANNER END -->
-
-
 <!-- ✅ ABOUT DATA HOUSE SECTION START -->
-<section class="about-section">
-
-  <!-- ✅ Introduction Box -->
-  <div class="about-container">
-<div class="about-box">
-    <h2 class="about-title">About "The Data House"</h2>
+  <div class="About-explain-section">
+	<div class="About-explain-section-content">
+    <!-- ✅ Title + Subtitle -->
+    <h1 class="About-explain-title">About "The Data House"</h1>
+	
+    <!-- ✅ Content Block -->
+    <div class="About-explain-content">
     <p>
       <strong class="highlight">The Data House is a future focused tech startup on a mission to transform raw data into real world innovation.</strong>
       From powering intelligent systems to delivering actionable insights, we specialize in Machine Learning, Artificial Intelligence, Bioinformatics, Data Analytics, & Power BI development helping businesses, students & institutions unlock their full data potential.<br><br>
@@ -66,35 +73,45 @@
       To fuel learning and innovation, we also provide ready to use Power BI templates & authentic sports datasets including cricket, rugby, and football, giving both learners and analysts the tools to build with confidence.<br><br>
       <strong class="highlight">At The Data House, we are here to shine your data.</strong>
     </p>
-</div>
+    </div>
+	</div>
   </div>
 
   <!-- ✅ Vision Box -->
-  <div class="about-container">
-<div class="about-box">
-    <h2 class="about-title">Our Vision</h2>
+  <div class="vision-section">
+	<div class="vision-section-content">
+    <!-- ✅ Title + Subtitle -->
+    <h1 class="vision-title">Our Vision</h1>
+	
+    <!-- ✅ Content Block -->
+    <div class="vision-content">
     <p>
       <strong class="highlight">At The Data House, our vision is to become Sri Lanka’s most trusted and influential name in data science & analytics leading the nation into a smarter, data driven future.</strong><br><br>
       In the next 10 years, we envision expanding our footprint from local excellence to global recognition, making The Data House a global brand in the data science industry powered by Sri Lankan talent and passion.<br><br>
       <strong class="highlight">We don’t follow trends - we create them. We don’t wait for the future - we build it.</strong>
     </p>
-</div>
+    </div>
+	</div>
   </div>
 
   <!-- ✅ Mission Box -->
-  <div class="about-container">
-<div class="about-box">
-    <h2 class="about-title">Our Mission</h2>
+  <div class="mission-section">
+	<div class="mission-section-content">
+    <!-- ✅ Title + Subtitle -->
+    <h1 class="mission-title">Our Mission</h1>
+	
+    <!-- ✅ Content Block -->
+    <div class="mission-content">
     <p>
       <strong class="highlight">At The Data House, our mission is to ignite a data driven revolution in Sri Lanka by bridging technology & talent.</strong>
       We strive to empower students, companies, and industries with cutting-edge solutions in Machine Learning, Artificial Intelligence, Bioinformatics, Data Analytics & Power BI helping them unlock insights, drive innovation & solve real world problems.<br><br>
       But we don’t stop at solutions, we build futures. Through our academy and affordable course programs, we are cultivating the next generation of data leaders who will shape the future of Sri Lanka. By nurturing young minds and fueling their passion for data, we are turning today’s learners into tomorrow’s innovators.<br><br>
       <strong class="highlight">This is more than a mission. It’s our promise to the future.</strong>
     </p>
-</div>
+    </div>
+	</div>
   </div>
 
-</section>
 <!-- ✅ ABOUT DATA HOUSE SECTION END -->
 
 
@@ -132,10 +149,6 @@
     </div>
   </div>
 </section>
-
-
-
-
 
 
 <!-- ✅ FOOTER SECTION START -->
