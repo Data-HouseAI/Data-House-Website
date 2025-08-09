@@ -1360,6 +1360,63 @@ body.dark-mode .solution-point-desc {
   color: #ffffff;
 }
 
+/* ✅ Responsive */
+@media (max-width: 768px) {
+.About-explain-title {
+font-size: clamp(0.1rem, 4vw, 2rem);
+}
+
+.About-explain-content p {
+font-size: clamp(0.1rem, 4vw, 1.1rem);
+}
+
+.About-explain-content .highlight {
+  font-size: clamp(0.1rem, 4vw, 1.1rem);
+}
+
+.vision-title {
+font-size: clamp(0.1rem, 4vw, 2rem);
+}
+
+.vision-content p {
+font-size: clamp(0.1rem, 4vw, 1.1rem);
+}
+
+.vision-content .highlight {
+  font-size: clamp(0.1rem, 4vw, 1.1rem);
+}
+
+.mission-title {
+font-size: clamp(0.1rem, 4vw, 2rem);
+}
+
+.mission-content p {
+font-size: clamp(0.1rem, 4vw, 1.1rem);
+}
+
+.mission-content .highlight {
+  font-size: clamp(0.1rem, 4vw, 1.1rem);
+}
+
+.solutions-title {
+  font-size: clamp(0.1rem, 4vw, 2rem);
+}
+
+.solutions-description {
+  font-size: clamp(0.1rem, 4vw, 1.1rem);
+}
+
+.solution-point-title {
+  font-size: clamp(0.1rem, 4vw, 1.2rem);
+}
+
+.solution-point-desc {
+  font-size: clamp(0.1rem, 4vw, 1.1rem);
+}
+
+
+}
+
 /* =================================================== End of about.html =================================================== */
 
 /* =================================================== services.html =================================================== */
@@ -1598,9 +1655,10 @@ body.dark-mode .courses-section {
 }
 
 .courses-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
+  width: auto;
   max-width: 1300px;
   margin: 0 auto;
 }
@@ -1822,7 +1880,8 @@ body.dark-mode .instruction-title {
 /* Card Layout */
 .content-section-dashboard {
   background-color: #e6e6e6;
-  padding: 30px 10px;
+  padding: 30px 30px;
+  
 }
 
 body.dark-mode .content-section-dashboard {
@@ -1831,8 +1890,9 @@ body.dark-mode .content-section-dashboard {
 
 .content-section-data {
   background-color: #ffffff;
-  padding: 2rem;
+  padding: 30px 30px;
 }
+
 
 body.dark-mode .content-section-data {
   background-color: #152238;
@@ -1906,13 +1966,16 @@ body.dark-mode .label {
 
 /* === FIX: Layout 3 cards in one row === */
 .card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
+  width: auto;
   max-width: 1300px;
   margin: 0 auto;
 }
 
+
+  
 /* Card Content */
 .card-title {
   text-align: center;
@@ -2027,9 +2090,14 @@ body.dark-mode .price-detail-card {
   padding: 2rem;
     padding: 30px 30px;
 }
-body.dark-mode .dashboard-price-section {
-  background-color: #152238;
+
+.content-section-dashboard {
+  background-color: #e6e6e6;
+  padding: 30px 10px;
 }
+
+
+
 .dashboard-price-container {
   display: flex;
   justify-content: space-between;
