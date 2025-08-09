@@ -34,6 +34,7 @@ body {
 .logo {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 4px;
 }
 
@@ -712,7 +713,7 @@ body.dark-mode .academy-title-main {
 }
 
 .academy-content-main {
-  max-width: 1300px;
+  max-width: 100%;
   margin: 0 auto;
 font-size: clamp(0.1rem, 4vw, 1.05rem);
   line-height: 1.8;
@@ -1399,10 +1400,10 @@ body.dark-mode .service-btn {
 /* ✅ ACADEMY SECTION */
 .academy-section {
   background-color: #ffffff;
-  padding: 30px 20px;
+  padding: 30px 30px;
   text-align: center;
-  max-width: 1300px;
   margin: auto;
+  
 }
 
 body.dark-mode .academy-section {
@@ -1410,7 +1411,7 @@ body.dark-mode .academy-section {
 }
 
 .academy-title {
-  font-size: 2.5rem;
+font-size: clamp(0.1rem, 4vw, 2rem);
   font-weight: bold;
   color: #152238;
   margin-bottom: 10px;
@@ -1421,7 +1422,7 @@ body.dark-mode .academy-title {
 }
 
 .academy-subtitle {
-  font-size: 1.4rem;
+font-size: clamp(0.1rem, 4vw, 1.4rem);
   font-weight: bold;
   color: #152238;
   margin-bottom: 30px;
@@ -1439,7 +1440,7 @@ body.dark-mode .academy-subtitle {
 }
 
 .academy-content p {
-  font-size: 1.1rem;
+font-size: clamp(0.1rem, 4vw, 1.1rem);
   line-height: 1.8;
   text-align: left;
   color: #000000;
@@ -1451,6 +1452,7 @@ body.dark-mode .academy-content p {
 
 .academy-content .highlight {
   font-weight: bold;
+  font-size: clamp(0.1rem, 4vw, 1.1rem);
   color: #152238;
 }
 
@@ -1466,17 +1468,17 @@ body.dark-mode .academy-content .highlight {
   margin-top: 40px;
 }
 
+
 .academy-btn {
-  padding: 12px 25px;
-  border-radius: 8px;
+  padding: 12px 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
   border: 2px solid #ffd700;
+  border-radius: 8px;
   background-color: #152238;
   color: #ffd700;
-  font-weight: bold;
-  text-decoration: none;
   transition: all 0.3s ease;
-  text-align: center;
-  min-width: 220px;
 }
 
 body.dark-mode .academy-btn {

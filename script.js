@@ -20,6 +20,14 @@ toggle.addEventListener('change', () => {
   updateLogo();
 });
 
+// ✅ Mobile Menu Toggle
+// ✅ Mobile menu toggle
+// ✅ Full-width popup mobile menu
+document.getElementById('mobileMenu').addEventListener('click', function() {
+  this.classList.toggle('active');
+  document.querySelector('.nav-links').classList.toggle('mobile-active');
+});
+
 function updateLogo() {
   const isDark = document.body.classList.contains('dark-mode');
   logoImage.src = isDark ? 'Logo_dark.png' : 'Logo_light.png';
@@ -158,13 +166,4 @@ toggle.addEventListener('change', () => {
 
 //---------------------------------------------------------------------------------------------------------------------
 
-// ✅ Mobile Menu Toggle
-const mobileMenu = document.getElementById("mobileMenu");
-const navLinks = document.querySelector(".nav-links");
 
-if (mobileMenu && navLinks) {
-  mobileMenu.addEventListener("click", () => {
-    mobileMenu.classList.toggle("active");
-    navLinks.classList.toggle("mobile-active");
-  });
-}
