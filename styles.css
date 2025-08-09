@@ -175,7 +175,7 @@ input:checked + .slider:before {
 
 
 .slide-text {
-
+  background-color: rgba(0, 0, 0, 0.9); /* ✅ black with transparency */
   font-weight: bold;
   padding: 20px;
   border-radius: 8px;
@@ -183,9 +183,11 @@ input:checked + .slider:before {
   text-align: center;
   opacity: 0;
   transform: translateX(-100%);
+   display: inline-block;
   font-size: clamp(1rem, 4vw, 4rem); /* Auto-adjust font size */
   max-width: 90%; /* Keep text from touching edges */
 }
+
 
 .slide-text.animate-in {
   animation: slideInLeft 1s ease-out forwards;
@@ -215,7 +217,7 @@ body.dark-mode .slide-text {
 @media (max-width: 768px) {
 
   .slide-text {
-    font-size: clamp(0.1rem, 4vw, 1.5rem);
+    font-size: clamp(0.1rem, 4vw, 4rem);
     padding: clamp(8px, 3vw, 16px);
 	text-align: center;
   }
@@ -1587,7 +1589,7 @@ body.dark-mode .page-title {
 }
 
 .courses-section {
-  padding: 30px 30px;
+  padding: 30px 10px;
   background-color: #ffffff;
 }
 
@@ -1820,7 +1822,7 @@ body.dark-mode .instruction-title {
 /* Card Layout */
 .content-section-dashboard {
   background-color: #e6e6e6;
-  padding: 30px 30px;
+  padding: 30px 10px;
 }
 
 body.dark-mode .content-section-dashboard {
