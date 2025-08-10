@@ -1155,7 +1155,7 @@ body.dark-mode .About-explain-title {
 }
 
 .About-explain-content p {
-font-size: clamp(0.1rem, 4vw, 1.1rem);
+font-size: clamp(0.1rem, 4vw, 1.05rem);
   line-height: 1.8;
   text-align: left;
   color: #000000;
@@ -1167,7 +1167,7 @@ body.dark-mode .About-explain-content p {
 
 .About-explain-content .highlight {
   font-weight: bold;
-  font-size: clamp(0.1rem, 4vw, 1.1rem);
+  font-size: clamp(0.1rem, 4vw, 1.05rem);
   color: #152238;
 }
 
@@ -1208,7 +1208,7 @@ body.dark-mode .vision-title {
 }
 
 .vision-content p {
-font-size: clamp(0.1rem, 4vw, 1.1rem);
+font-size: clamp(0.1rem, 4vw, 1.05rem);
   line-height: 1.8;
   text-align: left;
   color: #000000;
@@ -1220,7 +1220,7 @@ body.dark-mode .vision-content p {
 
 .vision-content .highlight {
   font-weight: bold;
-  font-size: clamp(0.1rem, 4vw, 1.1rem);
+  font-size: clamp(0.1rem, 4vw, 1.05rem);
   color: #152238;
 }
 
@@ -1266,7 +1266,7 @@ body.dark-mode .mission-title {
 }
 
 .mission-content p {
-font-size: clamp(0.1rem, 4vw, 1.1rem);
+font-size: clamp(0.1rem, 4vw, 1.05rem);
   line-height: 1.8;
   text-align: left;
   color: #000000;
@@ -1278,7 +1278,7 @@ body.dark-mode .mission-content p {
 
 .mission-content .highlight {
   font-weight: bold;
-  font-size: clamp(0.1rem, 4vw, 1.1rem);
+  font-size: clamp(0.1rem, 4vw, 1.05rem);
   color: #152238;
 }
 
@@ -1314,7 +1314,7 @@ body.dark-mode .solutions-title {
 }
 
 .solutions-description {
-  font-size: clamp(0.1rem, 4vw, 1.1rem);
+  font-size: clamp(0.1rem, 4vw, 1.05rem);
   color: #000000;
   line-height: 1.8;
   text-align: left;
@@ -1351,7 +1351,7 @@ body.dark-mode .solution-point-title {
 }
 
 .solution-point-desc {
-  font-size: clamp(0.1rem, 4vw, 1.1rem);
+  font-size: clamp(0.1rem, 4vw, 1.05rem);
   color: #000000;
   line-height: 1.6;
 }
@@ -1367,11 +1367,11 @@ font-size: clamp(0.1rem, 4vw, 2rem);
 }
 
 .About-explain-content p {
-font-size: clamp(0.1rem, 4vw, 1.1rem);
+font-size: clamp(0.1rem, 4vw, 1.05rem);
 }
 
 .About-explain-content .highlight {
-  font-size: clamp(0.1rem, 4vw, 1.1rem);
+  font-size: clamp(0.1rem, 4vw, 1.05rem);
 }
 
 .vision-title {
@@ -1379,11 +1379,11 @@ font-size: clamp(0.1rem, 4vw, 2rem);
 }
 
 .vision-content p {
-font-size: clamp(0.1rem, 4vw, 1.1rem);
+font-size: clamp(0.1rem, 4vw, 1.05rem);
 }
 
 .vision-content .highlight {
-  font-size: clamp(0.1rem, 4vw, 1.1rem);
+  font-size: clamp(0.1rem, 4vw, 1.05rem);
 }
 
 .mission-title {
@@ -1391,11 +1391,11 @@ font-size: clamp(0.1rem, 4vw, 2rem);
 }
 
 .mission-content p {
-font-size: clamp(0.1rem, 4vw, 1.1rem);
+font-size: clamp(0.1rem, 4vw, 1.05rem);
 }
 
 .mission-content .highlight {
-  font-size: clamp(0.1rem, 4vw, 1.1rem);
+  font-size: clamp(0.1rem, 4vw, 1.05rem);
 }
 
 .solutions-title {
@@ -1403,7 +1403,7 @@ font-size: clamp(0.1rem, 4vw, 1.1rem);
 }
 
 .solutions-description {
-  font-size: clamp(0.1rem, 4vw, 1.1rem);
+  font-size: clamp(0.1rem, 4vw, 1.05rem);
 }
 
 .solution-point-title {
@@ -1411,7 +1411,7 @@ font-size: clamp(0.1rem, 4vw, 1.1rem);
 }
 
 .solution-point-desc {
-  font-size: clamp(0.1rem, 4vw, 1.1rem);
+  font-size: clamp(0.1rem, 4vw, 1.05rem);
 }
 
 
@@ -1566,7 +1566,7 @@ body.dark-mode .academy-subtitle {
 }
 
 .academy-content p {
-font-size: clamp(0.1rem, 4vw, 1.1rem);
+font-size: clamp(0.1rem, 4vw, 1.05rem);
   line-height: 1.8;
   text-align: left;
   color: #000000;
@@ -1578,7 +1578,7 @@ body.dark-mode .academy-content p {
 
 .academy-content .highlight {
   font-weight: bold;
-  font-size: clamp(0.1rem, 4vw, 1.1rem);
+  font-size: clamp(0.1rem, 4vw, 1.05rem);
   color: #152238;
 }
 
@@ -1781,6 +1781,15 @@ body.dark-mode .register-course-price-btn {
   border-color: #ffd700;
 }
 
+.course-dashboard-price-section {
+  background-color: #e6e6e6;
+  padding: 2rem;
+    padding: 30px 30px;
+}
+
+body.dark-mode .course-dashboard-price-section {
+  background-color: #152238;
+}
 
 
 .register-course-price-btn:hover {
@@ -2089,6 +2098,10 @@ body.dark-mode .price-detail-card {
   background-color: #e6e6e6;
   padding: 2rem;
     padding: 30px 30px;
+}
+
+body.dark-mode .dashboard-price-section {
+  background-color: #192841;
 }
 
 .content-section-dashboard {
@@ -2563,5 +2576,188 @@ body.dark-mode .course-service-content {
 @media (max-width: 768px) {
   .menu-toggle-course {
     display: block;
+  }
+}
+
+/* ==================================================== Contact Page ==================================================== */
+/* ================================
+   CONTACT POPUP STYLES
+================================ */
+
+/* Contact Button */
+/*
+.contact-btn {
+  padding: 12px 20px;
+  background: #152238;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: #1f3350;
+}
+*/
+.navbar .contact-btn {
+  background-color: #FFD700;
+  color: #000000;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.navbar .contact-btn:hover {
+  background-color: #e6c200;
+}
+
+body.dark-mode .navbar .contact-btn {
+  background-color: #FFD700;
+  color: #000000;
+}
+
+/* Popup Overlay */
+.popup-overlay {
+  display: none; /* hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  z-index: 2000;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Popup Content */
+.popup-content {
+  background: #152238;
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  color: white;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.close-btn:hover {
+  transform: rotate(90deg);
+}
+
+/* Titles */
+.popup-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.popup-subtitle {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: gray;
+  margin-bottom: 5px;
+}
+
+/* Form Layout */
+.form-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+    justify-content: center; /* centers shorter row */
+}
+
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  background: #000;
+  color: white;
+  font-size: 0.95rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #888;
+}
+
+textarea {
+  resize: none;
+}
+
+/* Privacy Note */
+.privacy-note {
+  font-size: 0.8rem;
+  color: gray;
+  margin-top: 12px;
+  line-height: 1.4;
+}
+
+.privacy-note a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.privacy-note a:hover {
+  text-decoration: underline;
+}
+
+/* Send Button */
+.send-btn {
+  background: #ffd700;
+  color: #192841;
+  border: none;
+  padding: 14px;
+  margin-top: 15px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.send-btn:hover {
+  background: darkred;
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 768px) {
+  .popup-content {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .popup-title {
+    font-size: 1.4rem;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
   }
 }

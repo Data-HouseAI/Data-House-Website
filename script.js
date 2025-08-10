@@ -20,6 +20,47 @@ toggle.addEventListener('change', () => {
   updateLogo();
 });
 
+//===========================Contact US PopUp==============================================
+
+// Open popup
+document.getElementById("contactBtn").addEventListener("click", function() {
+  document.getElementById("contactPopup").style.display = "flex";
+});
+
+// Close popup
+document.getElementById("closePopup").addEventListener("click", function() {
+  document.getElementById("contactPopup").style.display = "none";
+});
+
+// Optional: Close when clicking outside popup
+window.addEventListener("click", function(e) {
+  if (e.target.id === "contactPopup") {
+    document.getElementById("contactPopup").style.display = "none";
+  }
+});
+
+// Handle Form Submit
+document.getElementById("contactForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  // Collect form data
+  const formData = new FormData(this);
+
+  fetch("send-email.php", {
+    method: "POST",
+    body: formData
+  })
+  .then(res => res.text())
+  .then(data => {
+    alert(data);
+    document.getElementById("contactPopup").style.display = "none";
+    this.reset();
+  })
+  .catch(err => alert("Error sending message"));
+});
+
+//===========================Contact US PopUp End==============================================
+
 // ✅ Mobile Menu Toggle
 // ✅ Mobile menu toggle
 // ✅ Full-width popup mobile menu
@@ -143,6 +184,19 @@ rightBtn.addEventListener("click", () => {
 });
 
 
+
+// ✅ Full-width popup mobile menu
+document.getElementById('mobileMenucourse').addEventListener('click', function() {
+  this.classList.toggle('active');
+  document.querySelector('.nav-links').classList.toggle('mobile-active');
+});
+
+function updateLogo() {
+  const isDark = document.body.classList.contains('dark-mode');
+  logoImage.src = isDark ? 'Logo_dark.png' : 'Logo_light.png';
+}
+
+
 // ✅ Update Footer Logo Based on Theme (used on all pages)
 function updateFooterLogo() {
   const isDark = document.body.classList.contains('dark-mode');
@@ -159,11 +213,4 @@ updateFooterLogo();
 toggle.addEventListener('change', () => {
   updateFooterLogo(); // <- call again to update logo
 });
-
-//========================================================================================
-/// ✅ Responsive Carousel Script for Price Cards
-
-
-//---------------------------------------------------------------------------------------------------------------------
-
 
